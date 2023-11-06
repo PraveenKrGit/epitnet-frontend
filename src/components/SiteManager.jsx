@@ -29,7 +29,7 @@ const SiteManager = () => {
 
   const handleApproval = (id) => {
     axios
-      .put(`http://localhost:3001/api/users/${id}/approve-site`)
+      .put(`https://epinet-backend.onrender.com/api/users/${id}/approve-site`)
       .then((response) => {
         console.log(response.data);
         getUsers();

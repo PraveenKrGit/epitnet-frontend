@@ -29,7 +29,7 @@ const RegionalManager = () => {
 
   const handleApproval = (id) => {
     axios
-      .put(`http://localhost:3001/api/users/${id}/approve-regional`)
+      .put(`https://epinet-backend.onrender.com/api/users/${id}/approve-regional`)
       .then((response) => {
         console.log(response.data);
         getUsers();
