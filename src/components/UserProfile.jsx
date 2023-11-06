@@ -10,7 +10,7 @@ const UserProfile = () => {
 
   const { id } = useParams();
 
-  const GET_USER = `http://localhost:3001/api/user/${id}`;
+  const GET_USER = `https://epinet-backend.onrender.com/api/user/${id}`;
 
   const getUser = () => {
     axios

@@ -5,7 +5,7 @@ import styles from "../styles/users.module.css";
 const SiteManager = () => {
   const [users, setUsers] = useState([]);
 
-  const GET_USERS = "http://localhost:3001/api/users";
+  const GET_USERS = "https://epinet-backend.onrender.com/api/users";
 
   const getUsers = () => {
     axios

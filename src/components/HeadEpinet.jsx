@@ -29,7 +29,7 @@ const HeadEpinet = () => {
 
   const handleApproval = (id) => {
     axios
-      .put(`http://localhost:3001/api/users/${id}/approve-head`)
+      .put(`https://epinet-backend.onrender.com/api/users/${id}/approve-head`)
       .then((response) => {
         console.log(response.data);
         getUsers();

@@ -60,7 +60,7 @@ const Register = () => {
     },
   });
 
-  const POST_URL = "http://localhost:3001/api/create";
+  const POST_URL = "https://epinet-backend.onrender.com/api/create";
 
   const onSubmit = (data) => {
     setError("");
