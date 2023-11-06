@@ -46,7 +46,7 @@ const Login = () => {
     setType(event.target.value);
   };
 
-  const LOGIN_URL = "http://localhost:3001/api/login";
+  const LOGIN_URL = "https://epinet-backend.onrender.com/api/login";
 
   const onSubmit = (data) => {
 
