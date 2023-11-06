@@ -35,6 +35,7 @@ const Register = () => {
       .string()
       .required("Password is required")
       .min(6, "Password must be at least 6 characters"),
+      options: yup.array().required("Please select at least one option").min(1),
   });
 
   const {
@@ -56,6 +57,7 @@ const Register = () => {
       designation: "",
       department: "",
       mobile: "",
+      purpose:"",
       options: [],
     },
   });
@@ -142,7 +144,7 @@ const Register = () => {
 
         <div className={styles.textarea}>
             <label htmlFor="purpose">Purpose:</label>
-            <textarea {...register("textarea")} />
+            <textarea {...register("purpose")} />
             {errors.textarea && <span>*{errors.textarea.message}</span>}
           </div>
 
