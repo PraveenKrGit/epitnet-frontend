@@ -41,7 +41,7 @@ const HeadEpinet = () => {
 
   return (
     <div>
-      <h2>Site Data Manager</h2>
+      <h2>Head Epinet</h2>
       <div className={styles.cards}>
         {users.map((user) => (
           <div key={user._id} className={styles.user_card}>
